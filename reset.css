@@ -7,8 +7,7 @@ ul, ol, li,
 /*table*/
 caption, table, tbody, td, th, tr, tfoot, thead,
 /*img*/
-figcaption, figure, img
- {
+figcaption, figure, img {
   margin: 0;
   padding: 0;
   border: 0;
@@ -32,13 +31,23 @@ html {
   box-sizing: inherit;
 }
 
-
 /* this semantic tags default style is inline */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -57,6 +66,15 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input[readonly] {
+  cursor: default;
+  /*  hide blinkinkg cursor */
+  caret-color: transparent;
+}
+input[type="checkbox"] {
   cursor: pointer;
 }
 
@@ -166,15 +184,15 @@ video {
 
 /*dont change font*/
 b,
-strong, 
-i, 
+strong,
+i,
 em,
 cite,
 q,
 s,
 u,
 code,
-small,  {
+small {
   margin: 0;
   padding: 0;
   border: 0;
@@ -184,7 +202,6 @@ small,  {
 u {
   text-decoration-style: wavy;
 }
-
 
 legend {
   white-space: normal;
@@ -216,14 +233,12 @@ audio:not([controls]) {
   height: 0;
 }
 
-/* need alternatives 
+/* need alternatives
 if you want to disable outline on focus
-will work in contrast mode in any case 
+will work in contrast mode in any case
 */
 :focus,
 a:active,
 a:hover {
   outline: transparent;
 }
-
-
